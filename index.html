@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080B18">
+<title>Sonali — UI/UX Designer</title>
+<meta name="description" content="Sonali — UI/UX Designer with 3+ years of experience at Zeonix Global. Product, web and interaction design portfolio.">
+<style>
+:root{
+  --bg:#070A16;--ink:#F7F8FF;--muted:#A8B0C7;--line:rgba(255,255,255,.12);
+  --violet:#7C5CFF;--pink:#FF3FA4;--cyan:#22D3EE;--mint:#4DE1B8;
+  --orange:#FF9D4D;--yellow:#FFD166;--blue:#5AA7FF;--card:rgba(255,255,255,.07);
+  --max:1240px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 80% 0%,rgba(124,92,255,.22),transparent 30%),radial-gradient(circle at 10% 30%,rgba(34,211,238,.12),transparent 28%),var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.nav{position:fixed;z-index:20;top:16px;left:50%;transform:translateX(-50%);width:min(1160px,calc(100% - 28px));display:flex;align-items:center;justify-content:space-between;padding:12px 14px 12px 18px;border:1px solid var(--line);background:rgba(7,10,22,.62);backdrop-filter:blur(22px);border-radius:999px;box-shadow:0 12px 50px rgba(0,0,0,.28)}
+.brand{font-weight:900;letter-spacing:-.04em}.brand span{color:var(--cyan)}
+.navlinks{display:flex;gap:20px;color:#D9DEEF;font-size:13px}.navlinks a:hover{color:white}
+.cta{padding:10px 16px;border-radius:999px;background:linear-gradient(100deg,var(--violet),var(--pink));font-weight:800;font-size:12px}
+.hero{min-height:100vh;display:grid;align-items:center;padding:140px 0 80px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.05);color:#DCE2F3;font-size:12px;font-weight:800}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 18px var(--mint)}
+h1{font-size:clamp(62px,9vw,132px);line-height:.86;letter-spacing:-.075em;margin:25px 0 24px;max-width:900px}
+.gradient{background:linear-gradient(100deg,#fff 8%,#B7A7FF 35%,#22D3EE 68%,#FF6CB6 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:clamp(18px,2vw,24px);line-height:1.5;color:#C1C8DC;max-width:700px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:14px 20px;border-radius:999px;font-weight:850;border:1px solid var(--line);background:rgba(255,255,255,.06)}.btn.primary{border:0;background:linear-gradient(100deg,var(--violet),var(--pink));box-shadow:0 15px 50px rgba(124,92,255,.24)}
+.hero-art{position:relative;min-height:560px}
+.orb{position:absolute;border-radius:50%;filter:blur(1px);animation:float 7s ease-in-out infinite}
+.o1{width:210px;height:210px;background:radial-gradient(circle at 30% 25%,#fff, #7C5CFF 22%,#301E86 60%,transparent 70%);right:8%;top:4%}
+.o2{width:145px;height:145px;background:radial-gradient(circle at 35% 30%,#fff,#22D3EE 25%,#064E67 65%,transparent 70%);left:4%;bottom:15%;animation-delay:-2s}
+.o3{width:110px;height:110px;background:radial-gradient(circle at 35% 30%,#fff,#FF3FA4 24%,#7B124E 66%,transparent 72%);right:20%;bottom:7%;animation-delay:-4s}
+@keyframes float{50%{transform:translateY(-20px) rotate(8deg)}}
+.photo-frame{position:absolute;left:14%;top:10%;width:62%;height:78%;border-radius:38px;transform:rotate(4deg);padding:8px;background:linear-gradient(145deg,rgba(255,255,255,.45),rgba(255,255,255,.04));box-shadow:0 35px 90px rgba(0,0,0,.55)}
+.photo-frame img{width:100%;height:100%;object-fit:cover;border-radius:31px;display:block}
+.floating-card{position:absolute;padding:18px 20px;border:1px solid var(--line);background:rgba(12,16,34,.65);backdrop-filter:blur(20px);border-radius:22px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.fc1{right:0;top:28%}.fc2{left:0;bottom:8%}
+.num{font-size:30px;font-weight:950;letter-spacing:-.06em}.label{color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.08em}
+section{padding:120px 0}.section-kicker{color:var(--cyan);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.section-title{font-size:clamp(42px,6vw,80px);letter-spacing:-.065em;line-height:.95;margin:12px 0 50px;max-width:900px}
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.glass{border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.035));backdrop-filter:blur(18px);border-radius:28px;box-shadow:0 20px 70px rgba(0,0,0,.2);overflow:hidden}
+.about{grid-column:span 7;padding:34px;min-height:360px}.portrait{grid-column:span 5;min-height:360px;position:relative}.portrait img{width:100%;height:100%;object-fit:cover;display:block;opacity:.9}
+.bigcopy{font-size:30px;line-height:1.18;letter-spacing:-.04em;max-width:700px}.muted{color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}.stat{padding:20px;border-radius:20px;background:rgba(255,255,255,.05);border:1px solid var(--line)}.stat b{display:block;font-size:30px;letter-spacing:-.06em}.stat small{color:var(--muted);font-weight:800}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:25px}.tag{padding:8px 11px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);font-size:11px;color:#DDE3F4}
+.case{padding:0}.case-copy{padding:34px}.case-grid{display:grid;grid-template-columns:1fr 1fr}.mockup{min-height:430px;padding:28px;display:grid;place-items:center;background:radial-gradient(circle at 50% 20%,rgba(124,92,255,.22),transparent 45%)}
+.browser{width:88%;border-radius:18px;background:#F7F8FC;color:#101326;box-shadow:0 30px 70px rgba(0,0,0,.4);overflow:hidden}.bar{height:28px;background:#E9ECF4;display:flex;align-items:center;padding:0 10px;gap:5px}.bar i{width:6px;height:6px;border-radius:50%;display:block}.b1{background:#ff5d68}.b2{background:#ffc95c}.b3{background:#52d58d}.screen{padding:22px;background:linear-gradient(135deg,#0B1230,#1D2A62);color:white;min-height:330px}.screen h3{font-size:34px;letter-spacing:-.06em;margin:25px 0 8px}.screen p{color:#B8C1DB;font-size:12px}.minirow{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:24px}.mini{padding:14px;border-radius:14px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.1)}.mini strong{font-size:12px}.mini span{display:block;color:#9CA8C7;font-size:10px;margin-top:5px}
+.zeosign .mockup{background:radial-gradient(circle at 50% 20%,rgba(255,63,164,.22),transparent 45%)}.signscreen{background:#F5F6FB;color:#111528;min-height:330px;padding:20px}.signscreen h3{font-size:28px;letter-spacing:-.06em}.dash{display:grid;grid-template-columns:90px 1fr;gap:12px}.side{background:white;border-radius:12px;padding:10px}.side div{font-size:9px;padding:8px 4px;color:#778099}.side .active{color:#FF3FA4;font-weight:900}.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.tile{background:white;border-radius:12px;padding:12px;box-shadow:0 8px 20px rgba(20,25,50,.08)}.tile b{font-size:22px}.tile small{display:block;color:#7B8499;font-size:8px;margin-top:4px}
+.workflow{padding:60px 0}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{position:relative;padding:25px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.045)}.step .circle{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:900;margin-bottom:35px}.step h4{margin:0 0 8px;font-size:18px}.step p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}
+.capabilities{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.cap{padding:25px;min-height:150px}.cap b{font-size:15px}.cap p{color:var(--muted);font-size:12px;line-height:1.5}
+.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;margin-top:60px}.marquee-track{display:flex;gap:50px;width:max-content;animation:scroll 24s linear infinite}.marquee span{font-size:28px;font-weight:950;letter-spacing:-.04em;color:#DCE1F0}.marquee span:nth-child(3n){color:var(--cyan)}.marquee span:nth-child(4n){color:var(--pink)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.contact{position:relative;text-align:center;padding-bottom:100px}.contact h2{font-size:clamp(55px,9vw,120px);line-height:.86;letter-spacing:-.08em;margin:20px auto 30px;max-width:1000px}.contact p{color:var(--muted);font-size:18px}.links{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:30px}.source-note{font-size:11px;color:#7F89A4;margin-top:50px;line-height:1.6}
+footer{padding:25px 0 40px;border-top:1px solid var(--line);color:#7F89A4;font-size:11px;display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.hero-grid,.case-grid{grid-template-columns:1fr}.hero-art{min-height:500px}.about,.portrait{grid-column:span 12}.flow{grid-template-columns:1fr 1fr}.capabilities{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.navlinks{display:none}}
+@media(max-width:560px){.container{width:min(100% - 24px,var(--max))}.hero{padding-top:120px}.hero-art{min-height:420px}.photo-frame{left:8%;width:76%;height:78%}.fc1{right:-3%}.fc2{left:-3%}.flow,.capabilities{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}section{padding:85px 0}.nav{top:9px}.section-title{margin-bottom:30px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="brand" href="#top">SONALI<span>.</span></a>
+  <div class="navlinks">
+    <a href="#about">About</a><a href="#work">Work</a><a href="#process">Process</a><a href="#skills">Skills</a>
+  </div>
+  <a class="cta" href="#contact">Let's talk ↗</a>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <div class="eyebrow"><span class="dot"></span> AVAILABLE FOR DESIGN CONVERSATIONS</div>
+      <h1>Designing <span class="gradient">clarity</span> into every interaction.</h1>
+      <p class="lede">Hi, I'm Sonali — a UI/UX designer with 3+ years of experience, currently designing at Zeonix Global. I turn complex product workflows into clear, polished and human-centered experiences.</p>
+      <div class="actions">
+        <a class="btn primary" href="#work">Explore case studies ↓</a>
+        <a class="btn" href="https://www.behance.net/SonaliCherry" target="_blank" rel="noreferrer">Behance ↗</a>
+      </div>
+    </div>
+    <div class="hero-art reveal">
+      <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+      <div class="photo-frame"><img src="assets/sonali-portrait-1.jpg" alt="Sonali portrait"></div>
+      <div class="floating-card fc1"><div class="num">3+</div><div class="label">YEARS EXPERIENCE</div></div>
+      <div class="floating-card fc2"><div class="num">UI · UX</div><div class="label">PRODUCT DESIGN</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+<div class="container">
+  <div class="section-kicker reveal">01 / PROFILE</div>
+  <h2 class="section-title reveal">A designer who likes <span class="gradient">complex problems.</span></h2>
+  <div class="bento">
+    <article class="glass about reveal">
+      <div class="bigcopy">I work across <b>UX structure, UI craft, interaction design and visual systems</b> — with a focus on making business software easier to understand and use.</div>
+      <p class="muted" style="line-height:1.7;max-width:720px">At Zeonix Global, the product environment spans CRM, document verification, digital signing, PDF workflows and international payments. That context shapes a design practice built around hierarchy, reusable patterns and thoughtful user flows.</p>
+      <div class="tags"><span class="tag">User flows</span><span class="tag">Wireframes</span><span class="tag">Prototyping</span><span class="tag">UI systems</span><span class="tag">Interaction</span><span class="tag">Visual design</span></div>
+      <div class="stats">
+        <div class="stat"><b>3+</b><small>YEARS</small></div><div class="stat"><b>UX</b><small>THINKING</small></div><div class="stat"><b>UI</b><small>CRAFT</small></div><div class="stat"><b>∞</b><small>ITERATE</small></div>
+      </div>
+    </article>
+    <article class="glass portrait reveal"><img src="assets/sonali-portrait-2.jpg" alt="Sonali portrait"></article>
+  </div>
+</div>
+</section>
+
+<div class="marquee"><div class="marquee-track"><span>PRODUCT THINKING</span><span>UI CRAFT</span><span>INTERACTION</span><span>DESIGN SYSTEMS</span><span>PROTOTYPING</span><span>PRODUCT THINKING</span><span>UI CRAFT</span><span>INTERACTION</span></div></div>
+
+<section id="work">
+<div class="container">
+  <div class="section-kicker reveal">02 / SELECTED WORK</div>
+  <h2 class="section-title reveal">Two product stories. <span class="gradient">One design mindset.</span></h2>
+
+  <article class="glass case reveal">
+    <div class="case-grid">
+      <div class="case-copy">
+        <div class="section-kicker" style="color:var(--blue)">CASE STUDY 01</div>
+        <h3 style="font-size:clamp(38px,5vw,68px);line-height:.95;letter-spacing:-.07em;margin:14px 0">Zeonix Global</h3>
+        <p class="muted" style="font-size:17px;line-height:1.65">An AI-powered SaaS ecosystem designed around complex business workflows. The public site positions the ecosystem across student recruitment, document verification, digital signing, PDF workflows and international payments.</p>
+        <div class="tags"><span class="tag">Brand experience</span><span class="tag">Information architecture</span><span class="tag">Product discovery</span><span class="tag">Web UI</span></div>
+        <div class="actions"><a class="btn primary" href="https://zeonixglobal.com" target="_blank" rel="noreferrer">Open Zeonix Global ↗</a></div>
+      </div>
+      <div class="mockup">
+        <div class="browser">
+          <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+          <div class="screen">
+            <div style="font-size:10px;color:#22D3EE;font-weight:900;letter-spacing:.1em">AI-POWERED SAAS</div>
+            <h3>Connected products.</h3>
+            <p>Clear experiences for complex workflows.</p>
+            <div class="minirow">
+              <div class="mini"><strong>ZeoCRM</strong><span>Customers & relationships</span></div>
+              <div class="mini"><strong>ZeoVerify</strong><span>Identity & documents</span></div>
+              <div class="mini"><strong>ZeoSign</strong><span>Digital signing</span></div>
+              <div class="mini"><strong>ZeoForex</strong><span>Global currencies</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <div style="height:24px"></div>
+
+  <article class="glass case zeosign reveal">
+    <div class="case-grid">
+      <div class="mockup">
+        <div class="browser">
+          <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+          <div class="signscreen">
+            <h3>Sign. Track. Done.</h3>
+            <p style="color:#7B8499;font-size:11px">A streamlined digital document workflow.</p>
+            <div class="dash">
+              <div class="side"><div class="active">Dashboard</div><div>Documents</div><div>Templates</div><div>Workflow</div></div>
+              <div class="tiles"><div class="tile"><b style="color:#FFB84D">12</b><small>Pending</small></div><div class="tile"><b style="color:#5AA7FF">24</b><small>Sent</small></div><div class="tile"><b style="color:#35D6A4">86</b><small>Signed</small></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="case-copy">
+        <div class="section-kicker" style="color:var(--pink)">CASE STUDY 02</div>
+        <h3 style="font-size:clamp(38px,5vw,68px);line-height:.95;letter-spacing:-.07em;margin:14px 0">ZeoSign</h3>
+        <p class="muted" style="font-size:17px;line-height:1.65">Online document signing software for sending, signing, tracking and managing documents digitally. The public product flow is intentionally simple: upload, prepare, send, then track.</p>
+        <div class="tags"><span class="tag">Workflow design</span><span class="tag">Dashboard UI</span><span class="tag">Document UX</span><span class="tag">Interaction</span></div>
+        <div class="actions"><a class="btn primary" href="https://zeosign.com" target="_blank" rel="noreferrer">Open ZeoSign ↗</a></div>
+      </div>
+    </div>
+  </article>
+</div>
+</section>
+
+<section id="process" class="workflow">
+<div class="container">
+  <div class="section-kicker reveal">03 / PROCESS</div>
+  <h2 class="section-title reveal">From ambiguity to <span class="gradient">interface.</span></h2>
+  <div class="flow">
+    <div class="step reveal"><div class="circle" style="background:rgba(124,92,255,.2);color:#B8A8FF">01</div><h4>Discover</h4><p>Understand the context, audience, constraints and business goal.</p></div>
+    <div class="step reveal"><div class="circle" style="background:rgba(34,211,238,.2);color:#67E6F5">02</div><h4>Structure</h4><p>Shape information architecture, flows, states and priorities.</p></div>
+    <div class="step reveal"><div class="circle" style="background:rgba(255,63,164,.2);color:#FF79BD">03</div><h4>Design</h4><p>Translate the structure into polished UI, components and interactions.</p></div>
+    <div class="step reveal"><div class="circle" style="background:rgba(77,225,184,.2);color:#79F1CC">04</div><h4>Refine</h4><p>Prototype, gather feedback and iterate toward a clearer experience.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+  <div class="section-kicker reveal">04 / CAPABILITIES</div>
+  <h2 class="section-title reveal">A toolkit for <span class="gradient">real product work.</span></h2>
+  <div class="capabilities">
+    <div class="glass cap reveal"><b>UX RESEARCH</b><p>Context, user needs, problem framing and design questions.</p></div>
+    <div class="glass cap reveal"><b>IA & FLOWS</b><p>Information hierarchy, navigation and end-to-end journeys.</p></div>
+    <div class="glass cap reveal"><b>WIREFRAMES</b><p>Low-fidelity exploration before visual polish.</p></div>
+    <div class="glass cap reveal"><b>PROTOTYPING</b><p>Interaction concepts and realistic product flows.</p></div>
+    <div class="glass cap reveal"><b>UI DESIGN</b><p>Typography, layout, color, visual hierarchy and responsive patterns.</p></div>
+    <div class="glass cap reveal"><b>DESIGN SYSTEMS</b><p>Reusable components and states for consistency at scale.</p></div>
+    <div class="glass cap reveal"><b>INTERACTION</b><p>Micro-interactions, feedback, empty states and transitions.</p></div>
+    <div class="glass cap reveal"><b>VISUAL DESIGN</b><p>Graphic direction, presentation and product storytelling.</p></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="section-kicker reveal">05 / EDUCATION & GROWTH</div>
+  <h2 class="section-title reveal">Always learning. <span class="gradient">Always refining.</span></h2>
+  <div class="bento">
+    <div class="glass about reveal">
+      <div class="bigcopy">Design gets better when the thinking gets better.</div>
+      <p class="muted" style="line-height:1.7">The portfolio material includes Chandigarh University, Designwings UX/UI School and learning through platforms such as Canva and Coursera. These experiences support a practice that combines fundamentals with hands-on product work.</p>
+      <div class="tags"><span class="tag">Design fundamentals</span><span class="tag">UX/UI learning</span><span class="tag">Continuous improvement</span></div>
+    </div>
+    <div class="glass portrait reveal"><img src="assets/sonali-portrait-1.jpg" alt="Sonali"></div>
+  </div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+  <div class="section-kicker reveal">06 / CONTACT</div>
+  <h2 class="reveal">Let's make something <span class="gradient">clearer.</span></h2>
+  <p class="reveal">Recruiters, product teams and collaborators — I'd love to talk design.</p>
+  <div class="links reveal">
+    <a class="btn primary" href="https://www.behance.net/SonaliCherry" target="_blank" rel="noreferrer">Behance ↗</a>
+    <a class="btn" href="https://zeonixglobal.com" target="_blank" rel="noreferrer">Zeonix Global ↗</a>
+    <a class="btn" href="https://zeosign.com" target="_blank" rel="noreferrer">ZeoSign ↗</a>
+  </div>
+  <div class="source-note">
+    Public product context: Zeonix Global describes itself as an AI-powered SaaS company with a connected product ecosystem; ZeoSign describes online document signing with upload → prepare → send → track workflows. This portfolio does not invent confidential project metrics or private research findings.
+  </div>
+</div>
+</section>
+</main>
+
+<footer class="container"><span>© 2026 Sonali — UI/UX Designer</span><span>Designed as a premium editorial portfolio experience.</span></footer>
+
+<script>
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
