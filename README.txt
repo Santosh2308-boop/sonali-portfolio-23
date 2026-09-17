@@ -2,8 +2,6 @@ SONALI — UI/UX PORTFOLIO WEBSITE
 
 Files:
 - index.html
-- assets/sonali-portrait-1.jpg
-- assets/sonali-portrait-2.jpg
 
 How to use:
 1. Unzip the package.
